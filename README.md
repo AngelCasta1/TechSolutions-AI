@@ -33,11 +33,18 @@ Red: `192.168.10.0/24` — Virtualización: Oracle VM VirtualBox
 ![Windows Server](https://img.shields.io/badge/Windows_Server_2016-0078D6?style=flat&logo=windows&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh-SIEM-blue?style=flat)
+![Wazuh](https://img.shields.io/badge/Wazuh-SIEM-1D5C8C?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xNiAyQzguMyAyIDIgOC4zIDIgMTZzNi4zIDE0IDE0IDE0IDE0LTYuMyAxNC0xNFMyMy43IDIgMTYgMnoiLz48L3N2Zz4=&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
-![Samba](https://img.shields.io/badge/Samba-red?style=flat)
+![Samba](https://img.shields.io/badge/Samba-CC0000?style=flat&logoColor=white)
 ![Telegram](https://img.shields.io/badge/Telegram_Bot-26A5E4?style=flat&logo=telegram&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D6?style=flat&logo=microsoft&logoColor=white)
+![UFW](https://img.shields.io/badge/UFW-Firewall-E95420?style=flat&logo=ubuntu&logoColor=white)
+![Hydra](https://img.shields.io/badge/Hydra-Pentest-darkred?style=flat&logo=kalilinux&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-Network_Scanner-0E83CD?style=flat&logoColor=white)
+![Nikto](https://img.shields.io/badge/Nikto-Web_Scanner-green?style=flat&logoColor=white)
+![Cron](https://img.shields.io/badge/Cron-Automatizacion-555555?style=flat&logo=clockify&logoColor=white)
+![OpenSearch](https://img.shields.io/badge/OpenSearch-005EB8?style=flat&logo=opensearch&logoColor=white)
 
 ---
 
@@ -48,8 +55,7 @@ TechSolutions-AI-TFG/
 │
 ├── scripts/
 │   ├── backup_postgres.sh          # Copia de seguridad automatizada de PostgreSQL
-│   ├── wazuh_telegram.sh           # Alertas en tiempo real via Telegram (cron)
-│   └── wazuh_telegram_simple.sh    # Alertas via Telegram (active-response Wazuh)
+│   └── wazuh_telegram.sh           # Alertas en tiempo real via Telegram (cron)
 │
 ├── config/
 │   ├── smb.conf                    # Configuración Samba (recurso compartido backups)
@@ -117,7 +123,7 @@ Pruebas controladas realizadas para validar el sistema de monitorización:
 nmap -A -T4 192.168.10.0/24
 
 # Fuerza bruta SSH
-hydra -l angel -P /tmp/passwords.txt ssh://192.168.10.20 -t 4 -V
+hydra -l usuario -P /tmp/passwords.txt ssh://192.168.10.20 -t 4 -V
 
 # Escaneo web
 nikto -h http://192.168.10.20
