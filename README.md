@@ -58,16 +58,16 @@ TechSolutions-AI-TFG/
 │   └── wazuh_telegram.sh           # Alertas en tiempo real via Telegram (cron)
 │
 ├── config/
-│   ├── smb.conf                    # Configuración Samba (recurso compartido backups)
-│   ├── fstab                       # Montaje automático recurso Samba
-│   ├── ossec.conf                  # Configuración Wazuh Manager
-│   └── credenciales_backup         # Plantilla archivo credenciales Samba
+│   └── README.md          # Configuración
+│
+├── web/
+│   ├── index.html          # Intranet Corporativa
+│   ├── login.php           # Login panel administración
+│   ├── auth.php            # Autenticación
+│   └── panel.php           # Panel administración Intranet Corporativa
 │
 ├── grafana/
-│   ├── panel_actividad_web.sql     # Query panel actividad web (Time Series)
-│   ├── panel_salud_infra.sql       # Query panel salud infraestructura (Pie Chart)
-│   ├── panel_alertas_criticas.sql  # Query panel contador alertas criticas (Stat)
-│   └── panel_top_ips.sql           # Query panel Top IPs sospechosas (Table)
+│   └── README.md           # Query paneles
 │
 ├── firewall/
 │   ├── ufw_servidor_web.sh         # Reglas UFW servidor web (192.168.10.20)
